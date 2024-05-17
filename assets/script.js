@@ -30,6 +30,7 @@ let curImageIndex = 0;
 //RECUPERATION DES FLECHES + AJOUT DE CURSEUR POINTER
 const arrowRight = document.querySelector('.arrow_right');
 const arrowLeft = document.querySelector('.arrow_left');
+const arrows = document.querySelector('.arrow');
 //RECUPERATION DE BANNER 
 let slider = document.querySelector('.banner-img');
 
@@ -79,6 +80,8 @@ arrowLeft.style.cursor = 'pointer';
 //+ SUPPRESION DE ALT INITIAL + AJOUT DE NOUVEAU ALT
 slider.removeAttribute('alt');
 slider.setAttribute('alt', 'Impressions tous formats en boutique et en ligne');
+arrows.setAttribute('alt', 'flèche de navigation');
+
 
 // AJOUT DE EVENT LISTENERS POUR LES FLECHES & CREATION DESFONCTIONS CLICK RIGHT & LEFT
 arrowRight.addEventListener('click', () => {
